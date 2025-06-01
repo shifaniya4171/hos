@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="./contact.csss">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.5.1/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.5.1/uicons-thin-rounded/css/uicons-thin-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.5.1/uicons-thin-straight/css/uicons-thin-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.5.1/uicons-thin-straight/css/uicons-thin-straight.css'>
+</head>
+<body>
+    <nav>
+        <a href="./Home.html" class="logo">
+            <img src="./photos/logo1.png" alt="logo img">
+        </a>
+        <input type="checkbox" id="sidebar-active">
+        <label for="sidebar-active" class="open-sidebar-button">
+            <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32" fill="#5f6368">
+                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+            </svg>
+        </label>
+        <label id="overlay" for="sidebar-active"></label>
+        
+        <div class="links-container">
+            <label for="sidebar-active" class="close-sidebar-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32" fill="#5f6368">
+                    <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                </svg>
+
+                
+            </label>
+            <a href="./index.html" class="home-links">HOME</a>
+            <a href="./about1.html">ABOUT US</a>
+            <a href="./Doctors1.html">DOCTORS</a>
+            <a href="./services1.html">SERVICES</a>
+            <a href="./C&R1.html">CONSULTING RESERVATION</a>
+            <a href="./pharmacy1.html">ORDER</a>
+            <a href="./contect_us1.html">CONTACT US</a>
+        </div>
+           <!-- Search Bar -->
+    <form class="search-bar" action="/search" method="GET">
+        <input type="text" placeholder="Search..." name="q" class="search-input">
+        <button type="submit" class="search-button">
+            <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32" fill="#5f6368">
+                <path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/>
+            </svg>
+        </button>
+    </form>
+    </nav>
+    <section>
+        <header class="header">
+        </header>
+    </section>
+    <section class="contact">
+        <div class="parent">
+            <div class="text-container">
+                <h3>CONTACT US</h3>
+                <h4>We are here to help.</h4>
+                <p>Contact us today to experience a new era of healthcare in kandy. <BR>
+                    Your well-being is our priority, and healthy guard Hospital is your home for healing.</p>
+            </div>
+
+            <div class="child">
+                <div class="contact-us">
+                    <div class="row">
+                        <div class="contact-col">
+                            <div class="contact-item">
+                                <i class="fi fi-sr-phone-call"></i>
+                                <span>
+                                    <h5>24/7 Emergency Call</h5>
+                                    <p>+94 71 99 25 400</p>
+                                </span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fi fi-tr-mobile-button"></i>
+                                <span>
+                                    <h5>Channeling Hotline</h5>
+                                    <p>+94 71 99 25 400</p>
+                                </span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fi fi-ts-newsletter-subscribe"></i>
+                                <span>
+                                    <h5>Email Us</h5>
+                                    <p>healthyguard@gmail.com</p>
+                                </span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fi fi-ts-land-layer-location"></i>
+                                <span>
+                                    <h5>Our Address</h5>
+                                    <p>Kandy City</p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+    </section>
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d15830.406109366608!2d80.62423534999999!3d7.286096049999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1saasir%20hospital%20map!5e0!3m2!1sen!2slk!4v1724604715922!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </iframe>
+        <br>
+        <br>
+        <br>
+        <section class="cont">
+        <div class="hours-scheduler-section">
+            <!-- Operating Hours Section -->
+            <div class="hours-container">
+                <h2>Operating Hours</h2>
+                <div class="hours-card">
+                    <div class="icon">📅</div>
+                    <div class="card-info">
+                        <h3>Appointments</h3>
+                        <p>Monday - Friday, 9 AM - 5 PM</p>
+                    </div>
+                </div>
+                <div class="hours-card">
+                    <div class="icon">🏥</div>
+                    <div class="card-info">
+                        <h3>Emergency Services</h3>
+                        <p>Available 24/7</p>
+                    </div>
+                </div>
+                <div class="hours-card">
+                    <div class="icon">💊</div>
+                    <div class="card-info">
+                        <h3>Pharmacy</h3>
+                        <p>Monday - Saturday, 8 AM - 8 PM</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Appointment Scheduler Section -->
+            <div class="scheduler-container">
+                <h2>Book an Appointment</h2>
+                <p>Choose from our list of expert doctors and schedule your appointment online.</p>
+                <p>Enjoy the convenience of booking anytime, anywhere. Available slots in real-time!</p>
+                <button class="scheduler-btn"><a href="../hospital mangment/C&R1.html" class="btnn1">Book Appointment</a>
+                    </button>
+            </div>
+        </div>
+    </section>
+    </section>
+
+    </div>
+    <section class="form">
+        <h1>SEND US A MESSAGE</h1>
+        <p>Please feel free to get in touch with us and our dedicated team will assist you to obtain the necessary information</p>
+        <div class="row">
+            <div class="container">
+                <img src="./photos/tech.jpeg" alt="Hospital Image" class="hospital">
+            </div>
+            <div class="container">
+                <form action="POST" class="form">
+                    <div class="name-box">
+                        <div class="input-box">
+                            <label for="first-name">First Name</label>
+                            <input type="text" id="first-name" placeholder="Enter first name" />
+                        </div>
+    
+                        <div class="input-box">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" id="last-name" placeholder="Enter last name" />
+                        </div>
+                    </div>
+    
+                    <div class="input-box">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" placeholder="Enter phone number" />
+                    </div>
+    
+                    <div class="input-box">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="Enter email address" />
+                    </div>
+    
+                    <div class="input-box">
+                        <label for="comment">Comment</label>
+                        <textarea id="comment" placeholder="Enter your comment" rows="4"></textarea>
+                    </div>
+    
+                    <div class="submit-box">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+        <footer>
+            <div class="row">
+                <div class="col">
+                    <img src="./photos/logo1.png" alt="logo-img" class="logo-img">
+                    <p>Hospitality Hospital takes pride in being at the forefront of medical innovation.<br>
+                        Our commitment to global standards is exemplified by our unmatched State-of-the-Art Meditec facilities,<br>
+                        ensuring that you receive nothing but the best.</p>
+                </div>
+                <div class="col">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="./index.html">HOME</a></li>
+                        <li><a href="./about1.html">ABOUT US</a></li>
+                        <li><a href="./Doctors1.html">DOCTORS</a></li>
+                        <li><a href="./services1.html">SERVICE</a></li>
+                        <li><a href="./C&R1.html">CONSULTING RESERVATION</a></li>
+                        <li><a href="./pharmacy1.html">ORDER</a></li>
+                        <a href="./contect_us1.html">CONTACT US</a>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Important Links</h3>
+                    <p>Contact Number: +94 71 99 25 400</p>
+                    <p>Email:Healthyguard@gmail.com</p>
+                    <p><a href="./contect_us1.html" class="btn1">Location</a></p>
+                    <p><a href="./about1.html" class="btn1">Chairmans Message</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Healthy Guard, all rights reserved.</p>
+            </div>
+        </footer>
+    </section>
+    
+</body>
+</html>

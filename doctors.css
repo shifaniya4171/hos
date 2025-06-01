@@ -1,0 +1,525 @@
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #f5f5f5;
+}
+html {
+    font-size: 12pt;
+    font-family: "Poppins", sans-serif;
+}
+
+nav {
+    height: 80px;
+    background: linear-gradient(0deg, #007EA7 53%, #525252 98%);
+    display: flex;
+    justify-content: space-between; /* Use space-between to place logo on left and menu on right */
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 140px;
+    margin-left: 10px; /* Adjust left margin */
+}
+
+.links-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    transition: all 0.5s ease;
+}
+
+nav .home-links {
+    margin-right: auto;
+}
+
+nav svg {
+    fill: white;
+}
+
+#sidebar-active {
+    display: none;
+}
+
+.open-sidebar-button, .close-sidebar-button {
+    display: none;
+}
+/* Search Bar Styling */
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    margin-right: 20px; /* Align to the right */
+}
+
+.search-input {
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    outline: none;
+    width: 200px; /* Adjust width */
+}
+
+.search-button {
+    background-color: #007EA7;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.search-button svg {
+    fill: white;
+}
+.header_sub{
+    background-image: url(./photos/Old\ doctors\ group.jpeg);
+    height: 80vh;
+    filter: saturate(150%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 50px;
+}
+.table-heading {
+    font-family: 'Arial', sans-serif;
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    border-bottom: 2px solid #007EA7;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+section {
+    margin: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.content-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.content-table th, .content-table td {
+    padding: 12px 15px;
+}
+
+.content-table th {
+    background-color: #007EA7;
+    color: white;
+}
+
+.content-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.content-table tr:hover {
+    background-color: #2082a2;
+}
+
+.content-table td {
+    border: 1px solid #ddd;
+}
+
+
+select {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: white;
+    width: 100%;
+}
+.hos-branches {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.doc-section {
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #007EA7;
+    font-size: 32px;
+}
+
+/* Default Grid for Desktop */
+.grids-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 doctors per row on larger screens */
+    gap: 20px;
+    justify-items: center;
+}
+
+.grid-items {
+    background-color: #f9f9f9;
+    border-radius: 20px;
+    border: #555;
+    box-shadow: 0 4px 8px #007EA7;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.grid-items:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px #014d67;
+}
+
+.profile-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0; /* Add padding to adjust the space around the image */
+}
+
+.profile-img img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%; /* Circular Image */
+    transition: all 0.3s ease;
+}
+
+.grid-items:hover .profile-img img {
+    transform: scale(1.1);
+}
+
+.doc-info {
+    padding: 20px;
+}
+
+.department {
+    display: inline-block;
+    background-color: #00A7D1;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 18px;
+    color: #007EA7;
+    margin: 10px 0;
+}
+
+.par {
+    font-size: 14px;
+    color:rgb(103, 102, 102);
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.social-icons {
+    margin: 10px 0;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    font-size: 18px;
+    color: #007EA7;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #00A7D1;
+}
+
+.appointment-btn {
+    background-color: #00A7D1;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    text-align: center;
+}
+
+.appointment-btn:hover {
+    background-color: #007EA7;
+}
+
+
+footer {
+    width: 100%; 
+    position: relative;
+    bottom: 0;
+    background: #007EA7;
+    color: white;
+    padding: 60px 0 30px; 
+    border-top-left-radius: 125px;
+    font-size: 14px;
+    line-height: 1.5; 
+    margin-top: 40px;
+    text-align: justify;
+}
+.section-above-footer {
+    padding-bottom: 40px; 
+}
+
+.row {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px; 
+}
+
+.col {
+    flex: 1; 
+    min-width: 200px; 
+    padding: 10px;
+    text-align: center; /* Center text in the column */
+}
+
+ul {
+    padding-left: 0; /* Remove default padding from ul */
+}
+
+ul li {
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+ul li a {
+    text-decoration: none; 
+    color: white;
+    display: inline-block; /* Inline block helps centering */
+}
+
+ul li a:hover {
+    text-decoration: underline; 
+}
+
+.col h3 {
+    margin-bottom: 20px;
+    text-align: center; /* Center the headings */
+    color: white;
+}
+.logo-img {
+    width: 150px;
+    margin-bottom: 20px;
+}
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px; /* Adds spacing between the columns and copyright */
+    font-size: 12px; /* Smaller font for the copyright */
+    color: white; /* Make the text white */
+    border-top: 1px solid rgba(255, 255, 255, 0.2); /* Optional border for separation */
+    padding-top: 10px; /* Padding for some spacing above the text */
+}
+.btnn1{
+    color: #ddd;
+}
+
+
+
+
+
+@media (max-width: 900px) {
+    .links-container {
+        flex-direction: column;
+        align-items: flex-start;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 10;
+        width: 300px;
+        height: 100%;
+        background-color: #007EA7;
+        box-shadow: -5px 0 5px rgba(0, 0, 0, 0.3);
+        transition: right 0.5s ease-out;
+    }
+
+    nav a {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 20px 30px;
+        justify-content: flex-start;
+    }
+
+    .open-sidebar-button, .close-sidebar-button {
+        display: block;
+        padding: 20px;
+        cursor: pointer;
+    }
+
+    #sidebar-active:checked ~ .links-container {
+        right: 0;
+    }
+
+    #sidebar-active:checked ~ #overlay {
+        background: rgb(255, 255, 255);
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9;
+    }
+    .search-bar {
+        display: none; /* Hide search bar on mobile or adjust as needed */
+    }
+}
+@media(max-width:900px){
+    .header_sub{
+       height:50vh;
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+
+    }
+
+}
+@media screen and (max-width: 399px) {
+    .content-table {
+        font-size: 14px;
+        overflow-x: auto;
+    }
+
+    .content-table th, .content-table td {
+        padding: 8px;
+    }
+
+    .content-table,
+    .content-table thead,
+    .content-table tbody,
+    .content-table th,
+    .content-table td,
+    .content-table tr {
+        display: block;
+        width: 100%;
+    }
+
+    .content-table tr {
+        margin-bottom: 15px;
+    }
+
+    .content-table td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+
+    .content-table td::before {
+        content: attr(data-label); /* Add category names before details */
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 10px;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    .content-table thead {
+        display: none;
+    }
+}
+@media screen and (max-width: 768px) {
+    .grids-container {
+        grid-template-columns: 1fr; /* 1 doctor per row */
+    }
+}
+
+/* For smaller screens (468px and below) */
+@media screen and (max-width: 468px) {
+    .grids-container {
+        grid-template-columns: 1fr; /* 1 doctor per row */
+        gap: 15px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .profile-img img {
+        height: 220px;
+    }
+
+    .doc-info {
+        padding: 15px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    .appointment-btn {
+        padding: 8px 15px;
+    }
+}
+
+/* For very small screens (399px and below) */
+@media screen and (max-width: 399px) {
+    .grids-container {
+        grid-template-columns: 1fr; /* 1 doctor per row */
+        gap: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .profile-img img {
+        height: 200px;
+    }
+
+    .doc-info {
+        padding: 10px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .appointment-btn {
+        padding: 6px 12px;
+    }
+}

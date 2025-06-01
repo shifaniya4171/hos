@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="pharmacy.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--navigation bar start-->
+    <nav>
+        <!--navigation bar start-->
+      <a href="./Home.html" class="logo">
+          <img src="./photos/logo1.png" alt="logo img">
+      </a>
+      <input type="checkbox" id="sidebar-active" title="Enables or disables the sidebar">
+
+      <label for="sidebar-active" class="open-sidebar-button"aria-label="Open Sidebar">
+          <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32" fill="#5f6368">
+              <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+          </svg>
+      </label>
+      
+      <label id="overlay" for="sidebar-active" aria-label="Sidebar toggle"></label>
+  
+      <div class="links-container">
+          <label for="sidebar-active" class="close-sidebar-button" aria-label="Close Sidebar">
+              <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32" fill="#5f6368">
+                  <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+              </svg>
+          </label>
+          <a href="./index.html" class="home-links">HOME</a>
+          <a href="./about1.html">ABOUT US</a>
+          <a href="./Doctors1.html">DOCTORS</a>
+          <a href="./services1.html">SERVICES</a>
+          <a href="./C&R1.html">CONSULTING RESERVATION</a>
+          <a href="./pharmacy1.html">ORDER</a>
+          <a href="./contect_us1.html">CONTACT</a>
+
+      </div>
+         <!-- Search Bar -->
+  <form class="search-bar" action="/search" method="GET">
+    
+      <input type="text" placeholder="Search..." name="q" class="search-input" aria-label="Search">
+      <button type="submit" class="search-button" aria-label="Search">
+          <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32" fill="#5f6368">
+              <path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/>
+          </svg>
+      </button>
+  </form>
+  <!--search bar end-->
+  </nav>
+     <!--navigation bar end-->
+    
+     <section class="head1">
+        <header class="header">
+            <div class="header-content">
+                <h1 class="h11">Order Medicines Easily</h1>
+                <p class="p1">Access a wide range of trusted medications. Place your orders online and enjoy fast, reliable delivery from Healthy Guard Pharmacy.</p>
+                
+                <br>
+                <br>
+                <br>
+                
+            </div>
+        
+            <div class="cards-section">
+                <div class="card-wrap">
+                    <div class="cardss1" style="background-image: url('./photos/med22.webp');"></div>
+                </div>
+                <div class="card-wrap">
+                    <div class="cardss2" style="background-image: url('./photos/med31.jpeg');"></div>
+                </div>
+                <div class="card-wrap">
+                    <div class="cardss3" style="background-image: url('./photos/med32.webp');"></div>
+                </div>
+            </div>
+        </header>
+    </section> 
+    <section>
+        <h3>
+            Our Pharmacy service
+        </h3>
+        <p class="parah">Welcome to Healthy Guard's online pharmacy, where we make ordering your medications safe, convenient,
+             and hassle-free. Our pharmacy offers a wide range of trusted pharmaceutical products, including prescription drugs, 
+             over-the-counter medications, and healthcare essentials. With our user-friendly system, you can easily browse our catalog, 
+             upload your prescription, and place an order in just a few clicks. We are committed to making your healthcare journey smoother
+              by ensuring that your medications are always accessible,
+             whether for pick-up at our hospital or delivered directly to your door.
+            </p>
+            <p class="parah">
+                Our goal is to provide high-quality, reliable service that prioritizes your health and well-being.
+                 Our experienced pharmacy team is here to support you, ensuring that you receive the right medication and care, 
+                 every time. With fast delivery options and a commitment to patient safety, we’re here to make sure your treatment 
+                 continues without interruption, from the comfort of your home.
+            </p>
+    </section>
+    <section>
+        <h3 class="form-heading">Pharmacy Essentials at Your Fingertips</h3>
+    </section>
+    <div class="sections-container1">
+
+<section id="analgesics">
+            <h2>Analgesics</h2>
+            <img src="./photos/med1.webp" alt="Analgesics Image" loading="lazy">
+            <select id="analgesics-select">
+                <option value="Paracetamol|10">Paracetamol - $10</option>
+                <option value="Ibuprofen|15">Ibuprofen - $15</option>
+                <option value="Naproxen|15">Naproxen-15</option>
+                <option value="Aspirin|14">Aspirin-14</option>
+                <option value="Diclofenac|20">Diclofenac-20</option>
+                <option value="Tramadol|23">Tramadol-23</option>
+                
+            </select>
+            <input type="number" id="analgesics-quantity" placeholder="Quantity" min="1" title="Antihistamines Quantity">
+            <button aria-label="submit form" class="button_add" onclick="addItem('analgesics')">Add</button>
+        </section>
+    
+        <section id="antibiotics">
+            <h2>Antibiotics</h2>
+            <img src="./photos/med2.webp" alt="Analgesics Image">
+            <select id="antibiotics-select">
+                <option value="Amoxicillin|20">Amoxicillin - $20</option>
+                <option value="Ciprofloxacin|25">Ciprofloxacin - $25</option>
+                <option value="Doxycycline|19">Doxycycline-19</option>
+                <option value="Azithromycin|18">Azithromycin-18</option>
+                <option value="Metronidazole|13">Metronidazole-13</option>
+                <option value="Cephalexin|20">Cephalexin-20</option>
+              
+            </select>
+            
+            <input type="number" id="antibiotics-quantity" placeholder="Quantity" min="1" title="Antihistamines Quantity">
+            <button class="button_add" onclick="addItem('antibiotics')">Add</button>
+        </section>
+    
+        <section id="antidepressants">
+            <h2>Antidepressants</h2>
+            <img src="./photos/med4.jpeg" alt="Analgesics Image" loading="lazy">
+            <select id="antidepressants-select">
+                <option value="Sertraline|20">Sertraline - $20</option>
+                <option value="Fluoxetine|25">Fluoxetine - $25</option>
+                <option value="Escitalopram|19">Escitalopram-19</option>
+                <option value="Paroxetine|18">Paroxetine-18</option>
+                <option value="Duloxetine|13">Duloxetine-13</option>
+                <option value="Amitriptyline|20">Amitriptyline-20</option>
+              
+            </select>
+            <input type="number" id="antidepressants-quantity" placeholder="Quantity" min="1" title="Antihistamines Quantity">
+            <button aria-label="submit form" class="button_add" onclick="addItem('antidepressants')">Add</button>
+        </section>
+    
+        <section id="antihistamines">
+            <h2>Antihistamines</h2>
+            <img src="./photos/med6.jpeg" alt="Analgesics Image"loading="lazy">
+            <select id="antihistamines-select">
+                <option value="Cetirizine|20">Cetirizine- $20</option>
+                <option value="Loratadine|25">Loratadine - $25</option>
+                <option value="Fexofenadine|19">Fexofenadine-19</option>
+                <option value="Diphenhydramine|18">Diphenhydramine-18</option>
+        
+              
+            </select>
+            <input type="number" id="antihistamines-quantity" placeholder="Quantity" min="1" title="Antihistamines Quantity">
+            <button aria-label="submit form" class="button_add" onclick="addItem('antihistamines')">Add</button>
+        </section>
+    
+        <section id="antihypertensives">
+            <h2>Antihypertensives</h2>
+              <img src="./photos/med7.webp" alt="Analgesics Image"loading="lazy">
+            <select id="antihypertensives-select">
+                <option value="Lisinopril|20">Lisinopril- $20</option>
+                <option value="Amlodipine|25">Amlodipine - $25</option>
+                <option value="Metoprolol|19">Metoprolol-19</option>
+                <option value="Losartan|18">Losartan-18</option>
+                <option value="Enalapril|18">Enalapril-18</option>
+                <option value="Hydrochlorothiazide|18">Hydrochlorothiazide18</option>
+        
+              
+            </select>
+            <input type="number" id="antihypertensives-quantity" placeholder="Quantity" min="1"title="Antihistamines Quantity">
+            <button aria-label="submit form" class="button_add" onclick="addItem('antihypertensives')">Add</button>
+        </section>
+        </div>
+        <h2>Order Management</h2>
+
+   <section>
+        <h3>Current Order</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="order-table-body"></tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Total</td>
+                    <td id="total-price">$0.00</td>
+                </tr>
+            </tfoot>
+        </table>
+        <br>
+        <br>
+    
+        <button aria-label="submit form" onclick="saveFavourite()">Save to Favourites</button>
+        <button aria-label="submit form" onclick="applyFavourite()">Apply Favourites</button>
+        <button aria-label="submit form" onclick="checkout()">Buy Now</button>
+        <button aria-label="submit form" onclick="clearOrder()">Clear Order</button>
+    
+
+        <button  aria-label="submit form"onclick="saveOrder()">Save Order</button>
+        <select id="order-history" onchange="loadOrder(this.value)">
+            <option value="">Select Saved Order</option>
+        </select>
+
+        
+</section>
+
+    <br>
+    <br>
+    <br>
+    <section class="chart-section">
+        <h2>Pharmacy Analytics</h2>
+        <br>
+        <br>
+    
+        <!-- Donut Chart -->
+        <div class="donut-chart">
+          <div class="donut">
+            <div class="donut-segment segment1"></div>
+            <div class="donut-segment segment2"></div>
+            <div class="donut-segment segment3"></div>
+            <div class="donut-segment segment4"></div>
+            <div class="donut-center">40%</div>
+          </div>
+          <div class="chart-labels">
+            <div><span class="color-box" style="background-color: #033c61;"></span> Prescription Medications (40%)</div>
+            <div><span class="color-box" style="background-color: #0e67a2;"></span> Over-the-Counter Drugs (25%)</div>
+            <div><span class="color-box" style="background-color: #36A2EB;"></span> Vitamins & Supplements (20%)</div>
+            <div><span class="color-box" style="background-color: #a8d5f3;"></span> Personal Care (15%)</div>
+          </div>
+        </div>
+    
+        <!-- Progress Bar Chart -->
+        <div class="progress-bar-chart">
+          <div class="progress-bar" style="--width: 80%; --color:  #033c61;">Product A (80%)</div>
+          <div class="progress-bar" style="--width: 60%; --color: #0e67a2;">Product B (60%)</div>
+          <div class="progress-bar" style="--width: 50%; --color: #36A2EB;">Product C (50%)</div>
+          <div class="progress-bar" style="--width: 70%; --color: #a8d5f3;">Product D (70%)</div>
+        </div>
+      </section>
+    <section>
+        <h3 class="form-heading">Shop Health, Live Better</h3>
+    </section>
+    <section>
+        <div class="row">
+            <div class="container">
+                <form action="POST" class="form">
+                    <!-- Patient Information Section -->
+                    <h4>Patient Information</h4>
+                    <div class="name-box">
+                        <div class="input-box">
+                            <label for="first-name">First Name</label>
+                            <input type="text" id="first-name" placeholder="Enter first name" />
+                        </div>
+                        <div class="input-box">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" id="last-name" placeholder="Enter last name" />
+                        </div>
+                    </div>
+                    <div class="input-box">
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" id="dob" />
+                    </div>
+                    <div class="input-box">
+                        <label for="phone">Contact Number</label>
+                        <input type="tel" id="phone" placeholder="Enter phone number" />
+                    </div>
+                    <div class="input-box">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="Enter email address" />
+                    </div>
+                    <div class="input-box">
+                        <label for="address">Delivery Address</label>
+                        <textarea id="address" placeholder="Enter your delivery address"></textarea>
+                    </div>
+    
+                    <!-- Prescription Information Section -->
+                    <h4>Prescription Information (if applicable)</h4>
+                    <div class="input-box">
+                        <label for="prescription-required">Do you have a prescription? (Yes/No)</label>
+                        <input type="text" id="prescription-required" placeholder="Yes or No" />
+                    </div>
+                    <div class="input-box">
+                        <label for="prescription-upload">Upload Prescription</label>
+                        <input type="file" id="prescription-upload" />
+                    </div>
+    
+                    <!-- Medicine Selection Section -->
+                    <h4>Medicine Selection</h4>
+                    <div class="input-box">
+                        <label for="medicine-name">Medicine Name</label>
+                        <input type="text" id="medicine-name" placeholder="Enter medicine name(s)" />
+                    </div>
+                    <div class="input-box">
+                        <label for="dosage">Dosage</label>
+                        <input type="text" id="dosage" placeholder="Enter dosage" />
+                    </div>
+                    <div class="input-box">
+                        <label for="quantity">Quantity</label>
+                        <input type="number" id="quantity" placeholder="Enter quantity" />
+                    </div>
+                    <div class="input-box">
+                        <label for="special-instructions">Special Instructions</label>
+                        <textarea id="special-instructions" placeholder="Enter special instructions"></textarea>
+                    </div>
+    
+                    <!-- Payment Information Section -->
+                    <h4>Payment Information</h4>
+                    <div class="input-box">
+                        <label for="payment-method">Payment Method</label>
+                        <select id="payment-method">
+                            <option value="credit-card">Credit/Debit Card</option>
+                            <option value="paypal">PayPal</option>
+                            <option value="insurance">Insurance</option>
+                        </select>
+                    </div>
+                    <div class="input-box">
+                        <label for="card-details">Card Details (if applicable)</label>
+                        <input type="text" id="card-details" placeholder="Enter card number" />
+                    </div>
+    
+                    <!-- Delivery Information Section -->
+                    <h4>Delivery Information</h4>
+                    <div class="input-box">
+                        <label for="delivery-option">Delivery Option</label>
+                        <select id="delivery-option">
+                            <option value="pick-up">Pick-up from pharmacy</option>
+                            <option value="home-delivery">Home delivery</option>
+                        </select>
+                    </div>
+                    <div class="input-box">
+                        <label for="delivery-time">Preferred Delivery Time</label>
+                        <select id="delivery-time">
+                            <option value="morning">Morning</option>
+                            <option value="afternoon">Afternoon</option>
+                            <option value="evening">Evening</option>
+                        </select>
+                    </div>
+    
+                    <!-- Insurance Information Section (if applicable) -->
+                    <h4>Insurance Information (if applicable)</h4>
+                    <div class="input-box">
+                        <label for="insurance-provider">Insurance Provider</label>
+                        <input type="text" id="insurance-provider" placeholder="Enter insurance provider" />
+                    </div>
+                    <div class="input-box">
+                        <label for="insurance-policy-number">Insurance Policy Number</label>
+                        <input type="text" id="insurance-policy-number" placeholder="Enter policy number" />
+                    </div>
+                    <div class="input-box">
+                        <label for="insurance-upload">Upload Insurance Card</label>
+                        <input type="file" id="insurance-upload" />
+                    </div>
+    
+                    <!-- Feedback Section (Optional) -->
+                    <h4>Feedback (Optional)</h4>
+                    <div class="input-box">
+                        <label for="rating">Service Rating (1-5 stars)</label>
+                        <input type="number" id="rating" min="1" max="5" />
+                    </div>
+                    <div class="input-box">
+                        <label for="suggestions">Suggestions/Comments</label>
+                        <textarea id="suggestions" placeholder="Enter your comments"></textarea>
+                    </div>
+    
+                    <!-- Submit Section -->
+                    <div class="submit-box">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+  
+    <script src="./script4.js">
+
+    </script>
+
+
+   
+<!--footer start-->
+        <footer>
+            <div class="row">
+                <div class="col">
+                    <img src="./photos/logo1.png" alt="logo-img" class="logo-img" loading="lazy">
+                    <p>Hospitality Hospital takes pride in being at the forefront of medical innovation.<br>
+                        Our commitment to global standards is exemplified by our unmatched State-of-the-Art Meditec facilities,<br>
+                        ensuring that you receive nothing but the best.</p>
+                </div>
+                <div class="col">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="./index.html">HOME</a></li>
+                        <li><a href="./about1.html">ABOUT US</a></li>
+                        <li><a href="./Doctors1.html">DOCTORS</a></li>
+                        <li><a href="./services1.html">SERVICE</a></li>
+                        <li><a href="./C&R1.html">CONSULTING RESERVATION</a></li>
+                        <li><a href="./pharmacy1.html">ORDER</a></li>
+                        <li><a href="./contect_us1.html">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Important Links</h3>
+                    <p>Contact Number: +94 71 99 25 400</p>
+                    <p>Email:Healthyguard@gmail.com</p>
+                    <p><a href="./contect_us1.html" class="btn1">Location</a></p>
+                    <p><a href="./about1.html" class="btn1">Chairmans Message</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Healthy Guard, all rights reserved.</p>
+            </div>
+        </footer>
+
+<!--footer end-->
+    
+</body>
+</html>

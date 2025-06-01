@@ -1,0 +1,827 @@
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #f5f5f5;
+}
+html {
+    font-size: 12pt;
+    font-family: "Poppins", sans-serif;
+}
+
+nav {
+    height: 80px;
+    background: linear-gradient(0deg, #007EA7 53%, #525252 98%);
+    display: flex;
+    justify-content: space-between; /* Use space-between to place logo on left and menu on right */
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 140px;
+    margin-left: 10px; /* Adjust left margin */
+}
+
+.links-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    transition: all 0.5s ease;
+}
+
+nav .home-links {
+    margin-right: auto;
+}
+
+nav svg {
+    fill: white;
+}
+
+#sidebar-active {
+    display: none;
+}
+
+.open-sidebar-button, .close-sidebar-button {
+    display: none;
+}
+/* Search Bar Styling */
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    margin-right: 20px; /* Align to the right */
+}
+
+.search-input {
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    outline: none;
+    width: 200px; /* Adjust width */
+}
+
+.search-button {
+    background-color: #007EA7;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.search-button svg {
+    fill: white;
+}
+.header {
+    background-image: url(../photos/hosppital2.jpeg);
+    height: 80vh;
+    background-position: center;
+    filter: saturate(150%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 50px; 
+ }
+ 
+ .contact {
+     background-color: #007EA7;
+     position: relative;
+     z-index: 1;
+ }
+ 
+ .parent {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Change to center child section horizontally */
+    align-items: center; /* Center child section vertically */
+    gap: 30px;
+    color: white;
+}
+
+ 
+ .child {
+    width: 30%;
+    height:auto; 
+    background-color: white;
+    color: #007EA7;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-right: 0;
+    left: 20px;
+    transition: transform 0.3s ease;
+}
+
+.child:hover {
+    transform: scale(1.05);
+}
+
+.contact-us {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-col {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+.contact-item i {
+    font-size: 50px; 
+    color: #007EA7;
+}
+
+.contact-item h5 {
+    margin: 0;
+    font-size: 22px;
+}
+.contact-item p {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+
+ .text-container {
+    flex: 1;
+    padding-right: 20px; 
+    margin-left: 50px;;    
+}
+
+.text-container h3 {
+    text-align: left;
+    font-size: 22px;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.text-container h4 {
+    text-align: left;
+    font-size: 32px;
+    margin: 10px 0;
+}
+
+.text-container p {
+    text-align: left;
+    margin: 10px 0;
+    font-size: 20px;
+}
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+.location iframe{
+    width: 100%;
+}
+.cont{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+.hours-scheduler-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    width: 90%;
+    max-width: 1200px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Operating Hours Styling */
+.hours-container {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px #0077cc;
+    padding: 25px;
+    width: 55%;
+    max-width: 600px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hours-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.hours-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #001a72;
+    margin-bottom: 30px;
+}
+
+.hours-card {
+    display: flex;
+    align-items: center;
+    background-color: #f9fbff;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hours-card:hover {
+    background-color: #eef3ff;
+    transform: translateY(-5px);
+}
+
+.icon {
+    font-size: 2.5rem;
+    margin-right: 15px;
+    animation: pop 0.8s ease forwards;
+}
+
+@keyframes pop {
+    0% { transform: scale(0.5); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.card-info h3 {
+    color: #001a72;
+    font-size: 1.5rem;
+}
+
+.card-info p {
+    color: #606c88;
+    font-size: 1rem;
+}
+
+/* Appointment Scheduler Styling */
+.scheduler-container {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px #0077cc;
+    padding: 40px;
+    width: 35%;
+    max-width: 400px;
+    text-align: center;
+    animation: slideIn 2s ease-in-out;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.scheduler-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateX(50px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+.scheduler-container h2 {
+    font-size: 2rem;
+    color: #001a72;
+    margin-bottom: 10px;
+}
+
+.scheduler-container p {
+    font-size: 1rem;
+    color: #606c88;
+    margin-bottom: 30px;
+}
+
+.scheduler-btn {
+    background-color: #00aaff;
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.scheduler-btn:hover {
+    background-color: #0077cc;
+    transform: scale(1.1);
+}
+.btnn1{
+    color: #ddd;
+    text-decoration: none;
+}
+
+.form {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px #007EA7;
+}
+
+.form h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #007EA7;
+}
+
+.form p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color:  #333;
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+}
+
+.container {
+    flex: 1;
+    min-width: 300px;
+    box-shadow: 0px 4px 12px #005F6B;
+    border-radius:8px ; 
+}
+
+.hospital {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+form.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+}
+
+.name-box {
+    display: flex;
+    gap: 15px; 
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-box label {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.input-box input,
+.input-box textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.input-box textarea {
+    resize: vertical; 
+}
+
+.submit-box {
+    display: flex;
+    justify-content: center; 
+}
+
+.submit-box button {
+    padding: 8px 12px;
+    background-color: #007EA7;
+    color: white;
+    border:none;
+    border-radius: 4px;
+    font-size: 14px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-box button:hover {
+    background-color: #005F6B;
+}
+
+footer {
+    width: 100%; 
+    position: relative;
+    bottom: 0;
+    background: #007EA7;
+    color: white;
+    padding: 60px 0 30px; 
+    border-top-left-radius: 125px;
+    font-size: 14px;
+    line-height: 1.5; 
+    margin-top: 40px;
+    text-align: justify;
+}
+.section-above-footer {
+    padding-bottom: 40px; 
+}
+
+.row {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px; 
+}
+
+.col {
+    flex: 1; 
+    min-width: 200px; 
+    padding: 10px;
+    text-align: center; 
+}
+
+ul {
+    padding-left: 0; 
+}
+
+ul li {
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+ul li a {
+    text-decoration: none; 
+    color: white;
+    display: inline-block; 
+}
+
+ul li a:hover {
+    text-decoration: underline; 
+}
+
+.col h3 {
+    margin-bottom: 20px;
+    text-align: center; 
+    color: white;
+}
+.logo-img {
+    width: 150px;
+    margin-bottom: 20px;
+}
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px; 
+    font-size: 12px;
+    color: white;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 10px; 
+}
+.btnn1{
+    color: #ddd;
+}
+@media (max-width: 900px) {
+    .links-container {
+        flex-direction: column;
+        align-items: flex-start;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 10;
+        width: 300px;
+        height: 100%;
+        background-color: #007EA7;
+        box-shadow: -5px 0 5px rgba(0, 0, 0, 0.3);
+        transition: right 0.5s ease-out;
+    }
+
+    nav a {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 20px 30px;
+        justify-content: flex-start;
+    }
+
+    .open-sidebar-button, .close-sidebar-button {
+        display: block;
+        padding: 20px;
+        cursor: pointer;
+    }
+
+    #sidebar-active:checked ~ .links-container {
+        right: 0;
+    }
+
+    #sidebar-active:checked ~ #overlay {
+        background: rgb(255, 255, 255);
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9;
+    }
+    .search-bar {
+        display: none; 
+    }
+}
+
+@media(max-width:900px){
+    .header{
+       height:50vh;
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+
+    }
+
+}
+/* Tablet view 768px */
+@media (max-width: 768px) {
+    .text-container {
+        text-align: center;
+        width: 100%;
+    }
+
+    .child {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .contact-item i {
+        font-size: 30px;
+    }
+
+    .contact-item h5 {
+        font-size: 16px;
+    }
+
+    .contact-item p {
+        font-size: 14px;
+    }
+}
+
+/* Mobile view 399px and below */
+@media (max-width: 399px) {
+    .text-container h3 {
+        font-size: 20px;
+    }
+
+    .text-container h4 {
+        font-size: 24px;
+    }
+
+    .text-container p {
+        font-size: 16px;
+    }
+
+    .contact-item i {
+        font-size: 25px;
+    }
+
+    .contact-item h5 {
+        font-size: 14px;
+    }
+
+    .contact-item p {
+        font-size: 12px;
+    }
+
+    .parent {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .flex-container {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .text-container {
+        width: 100%; 
+        padding: 0; 
+        margin-bottom: 20px; 
+    }
+
+    .child {
+        width: 90%; 
+        margin: 10px 0 ; 
+        gap: 5px;
+    }
+
+    .contact-item {
+        width: 90%;
+        padding: 10px;
+        margin: 10px auto; 
+    }
+
+    .contact-item i {
+        font-size: 25px;
+    }
+
+    .contact-item h5 {
+        font-size: 18px;
+    }
+
+    .contact-item p {
+        font-size: 14px;
+    }
+}
+
+/* Mobile view for 399px and below */
+@media screen and (max-width: 399px) {
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-container {
+        width: 100%;
+        margin-bottom: 20px; 
+    }
+
+    .child {
+        width: 95%; 
+        margin: 8px 0;
+    }
+
+    .contact-item {
+        width: 95%;
+        padding: 8px;
+        margin: 8px auto;
+    }
+
+    .contact-item i {
+        font-size: 22px;
+    }
+
+    .contact-item h5 {
+        font-size: 16px;
+    }
+
+    .contact-item p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .container {
+        margin-bottom: 20px; 
+    }
+}
+@media (max-width: 768px) {
+    .name-box {
+        flex-direction: column; 
+    }
+    .form {
+        padding: 15px;
+    }
+    .form h1 {
+        font-size: 22px;
+    }
+    .form p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 468px) {
+    .name-box {
+        flex-direction: column; 
+    }
+    .form {
+        padding: 10px;
+    }
+    .form h1 {
+        font-size: 20px;
+    }
+    .form p {
+        font-size: 16px;
+    }
+    .submit-box button {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 399px) {
+    .name-box {
+        flex-direction: column; 
+    }
+    .form {
+        padding: 8px;
+    }
+    .form h1 {
+        font-size: 18px;
+    }
+    .form p {
+        font-size: 14px;
+    }
+    .submit-box button {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .hours-scheduler-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hours-container, .scheduler-container {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+/* Styles for screen widths of 468px and below */
+@media screen and (max-width: 468px) {
+    body {
+        padding: 10px;
+    }
+
+    .hours-container, .scheduler-container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .hours-container h2, .scheduler-container h2 {
+        font-size: 1.8rem;
+    }
+
+    .icon {
+        font-size: 2rem;
+    }
+
+    .card-info h3 {
+        font-size: 1.3rem;
+    }
+
+    .card-info p {
+        font-size: 0.9rem;
+    }
+
+    .scheduler-btn {
+        padding: 12px 30px;
+        font-size: 1rem;
+    }
+}
+
+/* Styles for screen widths of 399px and below */
+@media screen and (max-width: 399px) {
+    body {
+        padding: 8px;
+    }
+
+    .hours-container, .scheduler-container {
+        padding: 15px;
+    }
+
+    .hours-container h2, .scheduler-container h2 {
+        font-size: 1.6rem;
+    }
+
+    .icon {
+        font-size: 1.8rem;
+    }
+
+    .card-info h3 {
+        font-size: 1.2rem;
+    }
+
+    .card-info p {
+        font-size: 0.8rem;
+    }
+
+    .scheduler-btn {
+        padding: 10px 25px;
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.5.1/uicons-thin-straight/css/uicons-thin-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.5.1/uicons-thin-straight/css/uicons-thin-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.5.1/uicons-thin-rounded/css/uicons-thin-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.5.1/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+</head>
+<body>
+    <nav>
+          <!---navigation bar start--->
+        <a href="./Home.html" class="logo">
+            <img src="./photos/logo1.png" alt="logo img">
+        </a>
+        <input type="checkbox" id="sidebar-active">
+        <label for="sidebar-active" class="open-sidebar-button">
+            <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32" fill="#5f6368">
+                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+            </svg>
+        </label>
+        <label id="overlay" for="sidebar-active"></label>
+    
+        <div class="links-container">
+            <label for="sidebar-active" class="close-sidebar-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32" fill="#5f6368">
+                    <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                </svg>
+            </label>
+            <a href="./index.html" class="home-links">HOME</a>
+            <a href="./about1.html">ABOUT US</a>
+            <a href="./Doctors1.html">DOCTORS</a>
+            <a href="./services1.html">SERVICES</a>
+            <a href="./C&R1.html">CONSULTING RESERVATION</a>
+            <a href="./pharmacy1.html">ORDER</a>
+            <a href="./contect_us1.html">CONTACT US</a>
+        </div>
+           <!-- Search Bar -->
+    <form class="search-bar" action="/search" method="GET">
+        <input type="text" placeholder="Search..." name="q" class="search-input">
+        <button type="submit" class="search-button">
+            <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32" fill="#5f6368">
+                <path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/>
+            </svg>
+        </button>
+    </form>
+    <!--search bar end-->
+    </nav>
+    <!---navigation bar end--->
+    
+    <section class="head1">
+        <header class="header">
+            <div class="header-content">
+                <h1 class="h11">Welcome to Healthy Guard Hospital</h1>
+                <p class="p1">Your health is our mission. Experience the best medical care with trusted professionals at Healthy Guard.</p>
+                <br>
+                <br>
+                <br>
+                <a href="#appointment" class="appointment-button">Make an Appointment</a>
+            </div>
+        
+            <div class="cards-section">
+                <div class="card-wrap">
+                    <div class="cardss1" style="background-image: url('./photos/1.jpg');"></div>
+                </div>
+                <div class="card-wrap">
+                    <div class="cardss2" style="background-image: url('./photos/2.jpg');"></div>
+                </div>
+                <div class="card-wrap">
+                    <div class="cardss3" style="background-image: url('./photos/3.webp');"></div>
+                </div>
+            </div>
+        </header>
+    </section>
+        
+            <div class='container' id='flex'>
+                <div class='box'>
+                  <h2>At Healthy Guard, we are dedicated to providing top-quality healthcare services to our community. Our team of skilled medical professionals works tirelessly to ensure that every patient receives the best care in a safe and supportive environment. With cutting-edge technology and modern facilities, we are equipped to handle a wide range of medical needs.</h2>
+                </div>
+                <div class='box'>
+                  <h2>We offer a comprehensive range of specialized services, from emergency care to outpatient clinics and surgical procedures. Our expert staff is committed to delivering personalized care for each patient, ensuring that every aspect of their treatment is handled with the utmost attention and care.</h2>
+                </div>
+                <div class='box'>
+                  <h2>In addition to our medical services, we focus on providing a positive experience for all our patients. Our hospital offers various amenities to make your stay more comfortable, such as 24/7 support, online appointment booking, and a caring, attentive staff ready to assist you at any time. At Healthy Guard, your health and comfort are our priorities.</h2>
+                </div>
+            </div>
+    </section>
+    <section>
+        <div class=" sub-header1">
+            <h3>Services & Facilities</h3>
+        </div>
+        <div class="service">
+            <div class="facilities">
+                <ul>
+                    <li>24-hour Emergency Treatment</li>
+                       <li> OPD & Specialists Consultations</li>
+                       <li> Indoor Patient Rooms</li>
+                        <li>Operating Theatres</li>
+                        <li>Labor Rooms</li>
+                        <li>Intensive Care Unit (ICU)</li>
+                    
+                </ul>
+            </div>
+            <div class="facilities">
+                <video src="./hos video.mp4" class="hos" controls>
+                    Your browser does not support the video tag.
+                </video>
+            </div>       
+         </div>
+    </section>
+    <section>
+        <div class="flex-container" id="flex">
+            <div class="text-container">
+                <h3>Our Services</h3>
+                <h4>Find the care you need</h4>
+                <p>Our commitment to global standards is exemplified by our unmatched State-of-the-Art Meditec facilities, <br>
+                    ensuring that you receive nothing but the best.</p>
+                <p>Call our Hotline +94 25 20 30 400</p>
+            </div>
+            <div class="grid-container">
+                <div class="card">
+                    <i class="fi fi-ts-anatomical-heart"></i>
+                    <p>Cardiology</p>
+                </div>
+                <div class="card">
+                    <i class="fi fi-ts-procedures"></i>
+                    <p>Radiology</p>
+                </div>
+                <div class="card">
+                    <i class="fi fi-tr-vision-target"></i>
+                    <p>Eye Care</p>
+                </div>
+                <div class="card">
+                    <i class="fi fi-rr-tooth"></i>
+                    <p>Dental Care</p>
+                </div>
+            </div>
+            <div class="explore-container">
+                <a href="./services1.html">Explore all our services and facilities</a>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h3 class="services">Your journey to Better Health</h3>
+        <br>
+        <ol style="list-style-type:1">
+            <li><strong>Explore Our Services:</strong>Discover the wide range of services we offer, from emergency care to specialized treatments.</li>
+            <a href="./services1.html" class="btnn">Learn More</a>
+            <li><strong>Book an Appointment:</strong>Easily schedule your visit by choosing the department, date, and time.</li>
+            <a href="./contact us (2).html" class="btnn">Book Now</a>
+            <li><strong>Access Patient Portal:</strong>Manage your health information, schedule appointments, and more through our secure patient portal.</li>
+            <a href="./Doctors1.html" class="btnn">Access Portal</a>
+            <li><strong>Understand Our Facilities:</strong> Learn about our state-of-the-art facilities and the dedicated professionals who are here to serve you.</li>
+            <a href="./services1.html" class="btnn">Tour Our Facilities</a>
+            <li><strong>Contact Us:</strong> Get in touch with our team for any inquiries or assistance you may need.</li>
+            <a href="./contact us (2).html" class="btnn">Contact Us</a>
+        </ol>
+    </section> 
+    <section>
+        <footer>
+            <div class="row">
+                <div class="col">
+                    <img src="./photos/logo1.png" alt="logo-img" class="logo-img">
+                    <p>Hospitality Hospital takes pride in being at the forefront of medical innovation.<br>
+                        Our commitment to global standards is exemplified by our unmatched State-of-the-Art Meditec facilities,<br>
+                        ensuring that you receive nothing but the best.</p>
+                </div>
+                <div class="col">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="./index.html">HOME</a></li>
+                        <li><a href="./about1.html">ABOUT US</a></li>
+                        <li><a href="./Doctors1.html">DOCTORS</a></li>
+                        <li><a href="./services1.html">SERVICE</a></li>
+                        <li><a href="./C&R1.html">CONSULTING RESERVATION</a></li>
+                        <li><a href="./pharmacy1.html">ORDER</a></li>
+                        <a href="./contect_us1.html">CONTACT US</a>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Important Links</h3>
+                    <p>Contact Number: +94 71 99 25 400</p>
+                    <p>Email:Healthyguard@gmail.com</p>
+                    <p><a href="./contect_us1.html" class="btn1">Location</a></p>
+                    <p><a href="./about1.html" class="btn1">Chairmans Message</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Healthy Guard, all rights reserved.</p>
+            </div>
+        
+
+        </footer>
+    </section>
+    
+</body>
+</html>

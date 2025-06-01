@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="styles.css"><!--style sheets-->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <a href="./Home.html" class="logo">
+            <img src="./photos/logo1.png" alt="logo img">
+        </a>
+        <input type="checkbox" id="sidebar-active">
+        <label for="sidebar-active" class="open-sidebar-button">
+            <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32" fill="#5f6368">
+                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+            </svg>
+        </label>
+        <label id="overlay" for="sidebar-active"></label>
+    
+        <div class="links-container">
+            <label for="sidebar-active" class="close-sidebar-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32" fill="#5f6368">
+                    <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                </svg>
+            </label>
+            <a href="./index.html" class="home-links">HOME</a>
+            <a href="./about1.html">ABOUT US</a>
+            <a href="./Doctors1.html">DOCTORS</a>
+            <a href="./services1.html">SERVICES</a>
+            <a href="./C&R1.html">CONSULTING RESERVATION</a>
+            <a href="./pharmacy1.html">ORDER</a>
+            <a href="./contect_us1.html">CONTACT US</a>
+        </div>
+           <!-- Search Bar -->
+    <form class="search-bar" action="/search" method="GET">
+        <input type="text" placeholder="Search..." name="q" class="search-input">
+        <button type="submit" class="search-button">
+            <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32" fill="#5f6368">
+                <path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/>
+            </svg>
+        </button>
+    </form>
+    </nav>
+    <br>
+    
+    <header class="header-section">
+        <div class="container">
+          <div class="text-content">
+            <h3><span class="highlight">CARING FOR LIFE</span></h3>
+            <h1>Welcome to Our Hospital</h1>
+        <p>We provide the best healthcare services with expert medical professionals, advanced technology, and compassionate care for your health and well-being.</p>
+            <div class="buttons">
+                <a href="#" class="btn explore-btn">Learn More</a>
+                <a href="#" class="btn contact-btn">Contact Us</a>
+            </div>
+          </div>
+          <div class="image-content">
+            <img src="./photos/4.webp" alt="Learning" class="main-image">
+            
+            <div class="small-images">
+              <img src="./photos/8.jpg" alt="Students" class="small-image">
+              <img src="./photos/6.jpg" alt="Additional Image" class="small-image">
+              <img src="./photos/7.jpg" alt="Another Image" class="small-image">
+            </div>
+          </div>
+        </div>
+      </header>
+      <br>
+      <br>
+      <br>
+
+    <section class="about-us">
+        <div class="about-col">
+            <h1>About us</h1>
+            <p>healthy guard Hospital is the most accredited hospital in the central province healthcare sector. 
+                Since 1997, healthy guard has revolutionized the healthcare industry through infrastructure development 
+                and advancement of products and services, with a view to deliver healthcare that is on par with national medical standards.
+            </p>
+        </div>
+        <div class="vision-mission">
+            <div class="vision">
+                <h3>Vision</h3>
+                <p>"Country with physical and mental well-being is for healthy and vigorous future"</p>
+            </div>
+            <div class="mission">
+                <h3>Mission</h3>
+                <p>"To contribute to building a prosperous motherland by providing a quality and efficient health service at an affordable basis to the citizens in the central province"</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <section class="hos-branches">
+            <h1>BRANCHES</h1>
+            <div class="grids-container">
+                <div class="grid-items">
+                    <img src="./photos/Memorial Hermann Katy Hospital.jpeg" alt="Memorial Hermann Katy Hospital" class="hos">
+                    <h3>Memorial Hermann Katy Hospital</h3>
+                    <p>
+                        <a href="https://maps.app.goo.gl/yXPNP6ekf9oFCjr6A" target="_blank">Located in Colombo</a> <!-- Link to Google Maps -->
+                    </p>
+                </div>
+                <div class="grid-items">
+                    <img src="./photos/Baptist Health Medical Center - Conway.jpeg" alt="Baptist Health Medical Center" class="hos">
+                    <h3>Baptist Health Medical Center</h3>
+                    <p>
+                        <a href="https://maps.app.goo.gl/3spkfaKb7L5NSmrt8" target="_blank">Located in Matale</a> <!-- Link to Google Maps -->
+                    </p>
+                </div>
+                <div class="grid-items">
+                    <img src="./photos/EBD Theory Becomes Practice At WellStar Paulding Hospital - HCD Magazine.jpeg" alt="WellStar Paulding Hospital" class="hos">
+                    <h3>WellStar Paulding Hospital</h3> 
+                    <p>
+                        <a href="https://maps.app.goo.gl/n6EFAZqhSDmB58wQ8" target="_blank">Located in Jaffna</a> <!-- Link to Google Maps -->
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h3 class="table-heading">Summary Table</h3>
+            <table class="content-table">
+                <thead>
+                    <tr>
+                        <th>Hospital Information</th>
+                        <th>Details</th>
+                        <th>Reamars</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Hospital Name</td>
+                        <td>Healthy Guard</td>
+                        <td>Accredited by Healthy guard.pvt.ltd </td>
+                    </tr>
+                    <tr>
+                        <td>Location</td>
+                        <td>Peradheniya Road,kandy</td>
+                        <td>Near Nolimit</td>
+                    </tr>
+                    <tr>
+                        <td>Founded</td>
+                        <td>1998</td>
+                        <td>25+ years of service</td>
+                    </tr>
+                    <tr>
+                        <td>Total Beds</td>
+                        <td>500</td>
+                        <td>Recently added 100 more beds</td>
+                    </tr>
+                    <tr>
+                        <td>ICU Beds</td>
+                        <td>50</td>
+                        <td>Includes pediatric ICU</td>
+                    </tr>
+                    <tr>
+                        <td>Departments</td>
+                        <td>Emergency, Pediatrics, Oncology, Surgery, Cardiology, etc</td>
+                        <td>10 specialized departments</td>
+                    </tr>
+                    <tr>
+                        <td>Specialties</td>
+                        <td>Cardiology, Neurology, Orthopedics, etc</td>
+                        <td>Award-winning Cardiology dept.</td>
+                    </tr>
+                    <tr>
+                        <td>Departments</td>
+                        <td>Emergency, Pediatrics, Oncology, Surgery, Cardiology, etc</td>
+                        <td>10 specialized departments</td>
+                    </tr>
+                    <tr>
+                        <td>Doctors</td>
+                        <td>150+</td>
+                        <td>20 Senior Consultants</td>
+                    </tr>
+                    <tr>
+                        <td>Ambulances</td>
+                        <td>10</td>
+                        <td>Equipped with advanced life support</td>
+                    </tr>
+                    <tr>
+                        <td>24/7 Emergency Services</td>
+                        <td>Yes</td>
+                        <td>Dedicated emergency department</td>
+                    </tr>
+                    <tr>
+                        <td>Contact Number</td>
+                        <td>081 345 6743</td>
+                        <td>Available for urgent inquiries</td>
+                    </tr>
+                    <tr>
+                        <td>Website</td>
+                        <td>www.healthyguard.com</td>
+                        <td>Online appointment booking</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="about-uss">
+            <div class="row">
+                <div class="about-cols image-col">
+                    <img src="./photos/Executive portraits.jpeg" alt="Chairman">
+                </div>
+                <div class="about-cols text-col">
+                    <h1>Chairman's Message</h1>
+                    <p>At Healthy Guard Hospital, our core mission is to deliver compassionate, innovative, and exceptional healthcare to all members of our community. We are committed to offering a healing environment where patients receive personalized care, and where the highest standards of medical excellence are upheld by our skilled professionals.</p>
+                    <p>Our dedicated team of doctors, nurses, and staff work around the clock to ensure that every individual who enters our hospital receives top-notch care and respect. We continuously invest in cutting-edge technologies and advanced medical practices, making sure our patients have access to the latest treatments and solutions.</p>
+                    <p>We thank you for trusting Healthy Guard Hospital with your care. As we move forward, we will remain steadfast in our commitment to enhancing patient well-being, promoting health and wellness, and maintaining the trust that our community places in us every day.</p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="row">
+                <div class="col">
+                    <img src="./photos/logo1.png" alt="logo-img" class="logo-img">
+                    <p>Hospitality Hospital takes pride in being at the forefront of medical innovation.<br>
+                        Our commitment to global standards is exemplified by our unmatched State-of-the-Art Meditec facilities,<br>
+                        ensuring that you receive nothing but the best.</p>
+                </div>
+                <div class="col">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="./index.html">HOME</a></li>
+                        <li><a href="./about1.html">ABOUT US</a></li>
+                        <li><a href="./Doctors1.html">DOCTORS</a></li>
+                        <li><a href="./services1.html">SERVICE</a></li>
+                        <li><a href="./C&R.html1">CONSULTING RESERVATION</a></li>
+                        <li><a href="./pharmacy1.html">ORDER</a></li>
+                        <a href="./contect_us1.html">CONTACT US</a>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Important Links</h3>
+                    <p>Contact Number: +94 71 99 25 400</p>
+                    <p>Email:Healthyguard@gmail.com</p>
+                    <p><a href="./contect_us1.html" class="btn1">Location</a></p>
+                    <p><a href="./about1.html" class="btn1">Chairmans Message</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Healthy Guard, all rights reserved.</p>
+            </div>
+        </footer>
+    </section>
+    
+</body>
+</html>

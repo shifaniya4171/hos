@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="C&R.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <a href="./Home.html" class="logo">
+            <img src="./photos/logo1.png" alt="logo img">
+        </a>
+        <input type="checkbox" id="sidebar-active">
+        <label for="sidebar-active" class="open-sidebar-button">
+            <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32" fill="#5f6368">
+                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+            </svg>
+        </label>
+        <label id="overlay" for="sidebar-active"></label>
+    
+        <div class="links-container">
+            <label for="sidebar-active" class="close-sidebar-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32" fill="#5f6368">
+                    <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                </svg>
+            </label>
+            <a href="./index.html" class="home-links">HOME</a>
+            <a href="./about1.html">ABOUT US</a>
+            <a href="./Doctors1.html">DOCTORS</a>
+            <a href="./services1.html">SERVICES</a>
+            <a href="./C&R1.html">CONSULTING RESERVATION</a>
+            <a href="./pharmacy1.html">ORDER</a>
+            <a href="./contect_us1.html">CONTACT US</a>
+        </div>
+        <form class="search-bar" action="/search" method="GET">
+            <input type="text" placeholder="Search..." name="q" class="search-input">
+            <button type="submit" class="search-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32" fill="#5f6368">
+                    <path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/>
+                </svg>
+            </button>
+        </form>
+    </nav>
+    
+    <section>
+        <header class="header">
+        </header>
+    </section>
+    <section>
+        <div class="heading">
+            <h3 class="par1">Doctor Counsulting Form</h3>
+
+        </div>
+    </section>
+    <section class="form">
+        <p class="parah">Our team of highly qualified doctors provides personalized consultations to address all your health concerns with expertise and care. 
+            Whether you're seeking a routine check-up, diagnosis, specialist advice, or ongoing treatment, we are dedicated to offering patient-centered care that
+             is tailored to your needs. With access to a wide range of medical specialties, both in-person and through virtual consultations,
+             we ensure you receive comprehensive and convenient healthcare at every step</p>
+            
+             <p class="parah">At our hospital, we believe in delivering expert medical consultations that prioritize your well-being. Our doctors take the time to understand your
+                 unique health concerns, providing clear, personalized advice and treatment options.
+                  Whether you need specialist care, a second opinion, or preventive health guidance,
+                 our experienced team is here to support you with compassionate and comprehensive care, both in-person and through convenient telemedicine services
+                </p>
+
+
+        <div class="row">
+            <div class="container">
+                <form action="#" class="form">
+                    <!-- Personal Information -->
+                    <h2>Personal Information</h2>
+                    <div class="input-box">
+                        <label for="full-name">Full Name</label>
+                        <input type="text" id="full-name" placeholder="Enter your full name" />
+                    </div>
+            
+                    <div class="input-box">
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" id="dob" />
+                    </div>
+            
+                    <div class="input-box">
+                        <label for="gender">Gender</label>
+                        <select id="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                            <option value="prefer-not-to-say">Prefer not to say</option>
+                        </select>
+                    </div>
+            
+                    <div class="input-box">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="Enter your email" />
+                    </div>
+            
+                    <div class="input-box">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" placeholder="Enter your phone number" />
+                    </div>
+            
+                    <div class="input-box">
+                        <label for="address">Address</label>
+                        <textarea id="address" placeholder="Enter your address" rows="3"></textarea>
+                    </div>
+            
+                    <!-- Appointment Details -->
+                    <h2>Appointment Details</h2>
+                    <div class="input-box">
+                        <label for="preferred-doctor">Preferred Doctor</label>
+                        <select id="preferred-doctor">
+                            <option value="dr-smith">Dr. Smith</option>
+                            <option value="dr-jones">Dr. Jones</option>
+                            <option value="dr-lee">Dr. Lee</option>
+                            <option value="Dr. Ethan Brooks">Dr. Ethan Brooks</option>
+                            <option value="Dr. Olivia Matthews">Dr. Olivia Matthews</option>
+                            <option value="Dr. Sophia Patel">Dr. Sophia Patel</option>
+                            <option value="Dr. James Henderson">Dr. James Henderson</option>
+                            <option value="Dr. Isabella Garcia">Dr. Isabella Garcia</option>
+                            <option value="Dr. Michael Thompson">Dr. Michael Thompson</option>
+                            <option value="Dr. Emily Collins">Dr. Emily Collins</option>
+                            <option value="Dr. William Carter">Dr. William Carter</option>
+                            <option value="Dr. Ava Mitchell">Dr. Ava Mitchell</option>
+                            <option value="Dr. Daniel Perez">Dr. Daniel Perez</option>
+                            <option value="Dr. Grace Morgan">Dr. Grace Morgan</option>
+                            <option value="Dr. Samuel Turner">Dr. Samuel Turner</option>
+                            <option value="Dr. Lily Foster">Dr. Lily Foster</option>
+                            <option value="Dr. Alexander Scott">Dr. Alexander Scott</option>
+                        </select>
+                    </div>
+            
+                    <div class="input-box">
+                        <label for="reason-visit">Reason for Visit</label>
+                        <textarea id="reason-visit" placeholder="Enter the reason for your visit" rows="3"></textarea>
+                    </div>
+            
+                    <div class="input-box">
+                        <label for="preferred-date">Preferred Date</label>
+                        <input type="date" id="preferred-date" />
+                    </div>
+            
+                    <div class="input-box">
+                        <label for="preferred-time">Preferred Time</label>
+                        <input type="time" id="preferred-time" />
+                    </div>
+            
+                    <!-- Medical History -->
+                    <h2>Medical History</h2>
+                    <div class="input-box">
+                        <label for="chronic-conditions">Do you have any chronic conditions?</label>
+                        <textarea id="chronic-conditions" rows="3"></textarea>
+                    </div>
+            
+                    <div class="input-box">
+                        <label for="medications">Are you currently taking any medications?</label>
+                        <textarea id="medications" rows="3"></textarea>
+                    </div>
+            
+                    <div class="input-box">
+                        <label for="allergies">Do you have any known allergies?</label>
+                        <textarea id="allergies" rows="3"></textarea>
+                    </div>
+            
+                    <div class="input-box">
+                        <label for="surgeries">Have you had any surgeries in the past?</label>
+                        <textarea id="surgeries" rows="3"></textarea>
+                    </div>
+            
+                    <!-- Insurance Information -->
+                    <h2>Insurance Information</h2>
+                    <div class="input-box">
+                        <label for="insurance-provider">Insurance Provider</label>
+                        <input type="text" id="insurance-provider" placeholder="Enter insurance provider" />
+                    </div>
+            
+                    <div class="input-box">
+                        <label for="insurance-id">Insurance ID Number</label>
+                        <input type="text" id="insurance-id" placeholder="Enter insurance ID number" />
+                    </div>
+            
+                    <div class="input-box">
+                        <label for="group-number">Group Number</label>
+                        <input type="text" id="group-number" placeholder="Enter group number" />
+                    </div>
+            
+                    <!-- Emergency Contact -->
+                    <h2>Emergency Contact</h2>
+                    <div class="input-box">
+                        <label for="emergency-name">Full Name</label>
+                        <input type="text" id="emergency-name" placeholder="Enter emergency contact's full name" />
+                    </div>
+            
+                    <div class="input-box">
+                        <label for="relationship">Relationship</label>
+                        <input type="text" id="relationship" placeholder="Enter relationship" />
+                    </div>
+            
+                    <div class="input-box">
+                        <label for="emergency-phone">Phone Number</label>
+                        <input type="tel" id="emergency-phone" placeholder="Enter emergency contact's phone number" />
+                    </div>
+            
+                    <!-- Consent and Agreement -->
+                    <h2>Consent and Agreement</h2>
+                    <div class="input-box">
+                        <label>
+                            <input type="checkbox" id="terms-conditions" /> I agree to the Terms & Conditions.
+                        </label>
+                    </div>
+            
+                    <div class="input-box">
+                        <label>
+                            <input type="checkbox" id="medical-consent" /> I consent to the use of my medical information for treatment purposes.
+                        </label>
+                    </div>
+            
+                    <!-- Submit Button -->
+                    <div class="submit-box">
+                        <button type="submit">Submit</button>
+                    </div>
+                    <div class="explore-container">
+                        <a href="./Doctors1.html">More Details About Our Doctors</a>
+                    </div>
+                </form>
+            </div>
+</div>
+</section>
+<br>
+<br>
+<!--consultig information-->
+<div class="testimonials-chart-section">
+    <div class="chart-container">
+        <div class="chart-circle">
+            <h1>95%</h1>
+            <p>Satisfaction Rate</p>
+        </div>
+        <div class="chart-info">
+            <div class="info-item">
+                <h3>1.2K</h3>
+                <p>Consultations Completed</p>
+            </div>
+            <div class="info-item">
+                <h3>800+</h3>
+                <p>Happy Patients</p>
+            </div>
+            <div class="info-item">
+                <h3>30+</h3>
+                <p>Specialized Doctors</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="testimonial-quote-section">
+        <blockquote>
+            "The level of care I received was beyond my expectations. Dr. Collins and his team were professional and attentive."
+            <p class="sat">— David Martin, 22nd April 2024</p>
+        </blockquote>
+    
+        <blockquote>
+            "Dr. Roberts took the time to listen and understand my concerns. I felt comfortable throughout the entire consultation."
+            <p class="sat">— Emma Wilson, 5th May 2024</p>
+        </blockquote>
+    
+        <blockquote>
+            "I highly recommend Dr. Brown. The service I received was exceptional, and I left feeling confident about my health."
+            <p class="sat">— Michael Carter, 14th June 2024</p>
+        </blockquote>
+    
+        <blockquote>
+            "The staff and doctors here are incredible. Dr. Anderson’s approach was detailed and reassuring. Thank you!"
+            <p class="sat">— Sophia Lee, 1st July 2024</p>
+        </blockquote>
+    
+        <blockquote>
+            "The consultation was smooth, and Dr. Patel’s expertise was evident. The advice I received has helped me immensely."
+            <p class="sat">— James Thompson, 20th August 2024</p>
+        </blockquote>
+    
+        <blockquote>
+            "I felt cared for from the moment I walked in. Dr. Scott was compassionate and thorough in her consultation."
+            <p class="sat">— Olivia Davis, 30th September 2024</p>
+        </blockquote>
+    </div>
+    
+</div>
+            
+   
+              <!--footer section-->
+        <footer>
+            <div class="row">
+                <div class="col">
+                    <img src="./photos/logo1.png" alt="logo-img" class="logo-img">
+                    <p>Hospitality Hospital takes pride in being at the forefront of medical innovation.<br>
+                        Our commitment to global standards is exemplified by our unmatched State-of-the-Art Meditec facilities,<br>
+                        ensuring that you receive nothing but the best.</p>
+                </div>
+                <div class="col">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="./index.html">HOME</a></li>
+                        <li><a href="./about1.html">ABOUT US</a></li>
+                        <li><a href="./Doctors1.html">DOCTORS</a></li>
+                        <li><a href="./services1.html">SERVICE</a></li>
+                        <li><a href="./C&R1.html">CONSULTING RESERVATION</a></li>
+                        <li><a href="./pharmacy1.html">ORDER</a></li>
+                        <a href="./contect_us1.html">CONTACT US</a>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Important Links</h3>
+                    <p>Contact Number: +94 71 99 25 400</p>
+                    <p>Email:Healthyguard@gmail.com</p>
+                    <p><a href="./contect_us1.html" class="btn1">Location</a></p>
+                    <p><a href="./about1.html" class="btn1">Chairmans Message</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Healthy Guard, all rights reserved.</p>
+            </div>
+        </footer>
+    </section>
+    <!--footer end-->
+</body>
+</html>
